@@ -68,16 +68,10 @@ public class Cap4Q24 {
                    
                    preco_final= preco+aumento-imposto;
                       
-                     if(preco_final <= 50) {
+                   
                          JOptionPane.showMessageDialog(null, "O produto " + produto + " custará: R$ " + preco_final, null, JOptionPane.INFORMATION_MESSAGE);
                          JOptionPane.showMessageDialog(null, "Ele é um produto barato", null, JOptionPane.INFORMATION_MESSAGE);
-                     } else if(preco_final > 50 && preco_final < 120) {
-                         JOptionPane.showMessageDialog(null, "O produto " + produto + " custará: R$ " + preco_final, null, JOptionPane.INFORMATION_MESSAGE);
-                         JOptionPane.showMessageDialog(null, "Ele é um produto normal", null, JOptionPane.INFORMATION_MESSAGE);
-                      } else {
-                         JOptionPane.showMessageDialog(null, "O produto " + produto + " custará: R$ " + preco_final, null, JOptionPane.INFORMATION_MESSAGE);
-                         JOptionPane.showMessageDialog(null, "Ele é um produto caro", null, JOptionPane.INFORMATION_MESSAGE);
-                              }
+                    
        
         break;
              case 2:
@@ -92,16 +86,10 @@ public class Cap4Q24 {
                    
                   preco_final= preco+aumento-imposto;
                       
-                     if(preco_final <= 50) {
+                     
                          JOptionPane.showMessageDialog(null, "O produto " + produto + " custará: R$ " + preco_final, null, JOptionPane.INFORMATION_MESSAGE);
                          JOptionPane.showMessageDialog(null, "Ele é um produto barato", null, JOptionPane.INFORMATION_MESSAGE);
-                     } else if(preco_final > 50 && preco_final < 120) {
-                         JOptionPane.showMessageDialog(null, "O produto " + produto + " custará: R$ " + preco_final, null, JOptionPane.INFORMATION_MESSAGE);
-                         JOptionPane.showMessageDialog(null, "Ele é um produto normal", null, JOptionPane.INFORMATION_MESSAGE);
-                      } else {
-                         JOptionPane.showMessageDialog(null, "O produto " + produto + " custará: R$ " + preco_final, null, JOptionPane.INFORMATION_MESSAGE);
-                         JOptionPane.showMessageDialog(null, "Ele é um produto caro", null, JOptionPane.INFORMATION_MESSAGE);
-                              }
+                     
         break;
             case 3: 
                    
@@ -116,22 +104,15 @@ public class Cap4Q24 {
                    
                   preco_final= preco+aumento-imposto;
                       
-                     if(preco_final <= 50) {
                          JOptionPane.showMessageDialog(null, "O produto " + produto + " custará: R$ " + preco_final, null, JOptionPane.INFORMATION_MESSAGE);
                          JOptionPane.showMessageDialog(null, "Ele é um produto barato", null, JOptionPane.INFORMATION_MESSAGE);
-                     } else if(preco_final > 50 && preco_final < 120) {
-                         JOptionPane.showMessageDialog(null, "O produto " + produto + " custará: R$ " + preco_final, null, JOptionPane.INFORMATION_MESSAGE);
-                         JOptionPane.showMessageDialog(null, "Ele é um produto normal", null, JOptionPane.INFORMATION_MESSAGE);
-                      } else {
-                         JOptionPane.showMessageDialog(null, "O produto " + produto + " custará: R$ " + preco_final, null, JOptionPane.INFORMATION_MESSAGE);
-                         JOptionPane.showMessageDialog(null, "Ele é um produto caro", null, JOptionPane.INFORMATION_MESSAGE);
-                              }
+                    
         break;
                 
         default: JOptionPane.showMessageDialog(null, "Escolha um valor dos citados" , null, JOptionPane.INFORMATION_MESSAGE);
                    
         }
-               } else { 
+               } else { // else do <=25
                    switch(SecOption) {
              case 1 :
                    porcent_aumento=0.12;
@@ -206,7 +187,7 @@ public class Cap4Q24 {
         break;
                 
         default: JOptionPane.showMessageDialog(null, "Escolha um valor dos citados" , null, JOptionPane.INFORMATION_MESSAGE);
-                      } // else do <=25
+                      } 
                 
            
                  }
@@ -227,16 +208,10 @@ public class Cap4Q24 {
                    
                    preco_final= preco+aumento-imposto;
                       
-                     if(preco_final <= 50) {
+                     
                          JOptionPane.showMessageDialog(null, "O produto " + produto + " custará: R$ " + preco_final, null, JOptionPane.INFORMATION_MESSAGE);
                          JOptionPane.showMessageDialog(null, "Ele é um produto barato", null, JOptionPane.INFORMATION_MESSAGE);
-                     } else if(preco_final > 50 && preco_final < 120) {
-                         JOptionPane.showMessageDialog(null, "O produto " + produto + " custará: R$ " + preco_final, null, JOptionPane.INFORMATION_MESSAGE);
-                         JOptionPane.showMessageDialog(null, "Ele é um produto normal", null, JOptionPane.INFORMATION_MESSAGE);
-                      } else {
-                         JOptionPane.showMessageDialog(null, "O produto " + produto + " custará: R$ " + preco_final, null, JOptionPane.INFORMATION_MESSAGE);
-                         JOptionPane.showMessageDialog(null, "Ele é um produto caro", null, JOptionPane.INFORMATION_MESSAGE);
-                              }
+                    
        
         break;
              case 2:
@@ -251,16 +226,10 @@ public class Cap4Q24 {
                    
                   preco_final= preco+aumento-imposto;
                       
-                     if(preco_final <= 50) {
+                    
                          JOptionPane.showMessageDialog(null, "O produto " + produto + " custará: R$ " + preco_final, null, JOptionPane.INFORMATION_MESSAGE);
                          JOptionPane.showMessageDialog(null, "Ele é um produto barato", null, JOptionPane.INFORMATION_MESSAGE);
-                     } else if(preco_final > 50 && preco_final < 120) {
-                         JOptionPane.showMessageDialog(null, "O produto " + produto + " custará: R$ " + preco_final, null, JOptionPane.INFORMATION_MESSAGE);
-                         JOptionPane.showMessageDialog(null, "Ele é um produto normal", null, JOptionPane.INFORMATION_MESSAGE);
-                      } else {
-                         JOptionPane.showMessageDialog(null, "O produto " + produto + " custará: R$ " + preco_final, null, JOptionPane.INFORMATION_MESSAGE);
-                         JOptionPane.showMessageDialog(null, "Ele é um produto caro", null, JOptionPane.INFORMATION_MESSAGE);
-                              }
+                     
         break;
             case 3: 
                    
@@ -275,16 +244,10 @@ public class Cap4Q24 {
                    
                   preco_final= preco+aumento-imposto;
                       
-                     if(preco_final <= 50) {
+                    
                          JOptionPane.showMessageDialog(null, "O produto " + produto + " custará: R$ " + preco_final, null, JOptionPane.INFORMATION_MESSAGE);
                          JOptionPane.showMessageDialog(null, "Ele é um produto barato", null, JOptionPane.INFORMATION_MESSAGE);
-                     } else if(preco_final > 50 && preco_final < 120) {
-                         JOptionPane.showMessageDialog(null, "O produto " + produto + " custará: R$ " + preco_final, null, JOptionPane.INFORMATION_MESSAGE);
-                         JOptionPane.showMessageDialog(null, "Ele é um produto normal", null, JOptionPane.INFORMATION_MESSAGE);
-                      } else {
-                         JOptionPane.showMessageDialog(null, "O produto " + produto + " custará: R$ " + preco_final, null, JOptionPane.INFORMATION_MESSAGE);
-                         JOptionPane.showMessageDialog(null, "Ele é um produto caro", null, JOptionPane.INFORMATION_MESSAGE);
-                              }
+                     
         break;
                 
         default: JOptionPane.showMessageDialog(null, "Escolha um valor dos citados" , null, JOptionPane.INFORMATION_MESSAGE);
