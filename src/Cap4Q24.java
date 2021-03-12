@@ -192,7 +192,6 @@ public class Cap4Q24 {
            
                  }
            }else{   //else do R (refrigeração)
-               JOptionPane.showMessageDialog(null, "ele entrou aqui", null, JOptionPane.INFORMATION_MESSAGE);
                if(preco <= 25 ) {
                
                switch(SecOption) {
