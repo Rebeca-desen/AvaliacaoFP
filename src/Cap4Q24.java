@@ -122,7 +122,7 @@ public class Cap4Q24 {
                    JOptionPane.showMessageDialog(null, "O aumento será: R$" + aumento, null, JOptionPane.INFORMATION_MESSAGE);
                    
                    imposto= porcent_imposto*preco;
-                   JOptionPane.showMessageDialog(null, "O aumento será: R$" + aumento, null, JOptionPane.INFORMATION_MESSAGE);
+                   JOptionPane.showMessageDialog(null, "O imposto será: R$" + aumento, null, JOptionPane.INFORMATION_MESSAGE);
                    
                    preco_final= preco+aumento-imposto;
                       
@@ -146,7 +146,7 @@ public class Cap4Q24 {
                   JOptionPane.showMessageDialog(null, "O aumento será: R$" + aumento, null, JOptionPane.INFORMATION_MESSAGE);
                    
                   imposto= porcent_imposto*preco;
-                  JOptionPane.showMessageDialog(null, "O aumento será: R$" + aumento, null, JOptionPane.INFORMATION_MESSAGE);
+                  JOptionPane.showMessageDialog(null, "O imposto será: R$" + aumento, null, JOptionPane.INFORMATION_MESSAGE);
                    
                   preco_final= preco+aumento-imposto;
                       
@@ -170,7 +170,7 @@ public class Cap4Q24 {
                   JOptionPane.showMessageDialog(null, "O aumento será: R$" + aumento, null, JOptionPane.INFORMATION_MESSAGE);
                    
                   imposto= porcent_imposto*preco;
-                  JOptionPane.showMessageDialog(null, "O aumento será: R$" + aumento, null, JOptionPane.INFORMATION_MESSAGE);
+                  JOptionPane.showMessageDialog(null, "O imposto será: R$" + aumento, null, JOptionPane.INFORMATION_MESSAGE);
                    
                   preco_final= preco+aumento-imposto;
                       
@@ -204,7 +204,7 @@ public class Cap4Q24 {
                    JOptionPane.showMessageDialog(null, "O aumento será: R$" + aumento, null, JOptionPane.INFORMATION_MESSAGE);
                    
                    imposto= porcent_imposto*preco;
-                   JOptionPane.showMessageDialog(null, "O aumento será: R$" + aumento, null, JOptionPane.INFORMATION_MESSAGE);
+                   JOptionPane.showMessageDialog(null, "O imposto será: R$" + aumento, null, JOptionPane.INFORMATION_MESSAGE);
                    
                    preco_final= preco+aumento-imposto;
                       
@@ -222,7 +222,7 @@ public class Cap4Q24 {
                   JOptionPane.showMessageDialog(null, "O aumento será: R$" + aumento, null, JOptionPane.INFORMATION_MESSAGE);
                    
                   imposto= porcent_imposto*preco;
-                  JOptionPane.showMessageDialog(null, "O aumento será: R$" + aumento, null, JOptionPane.INFORMATION_MESSAGE);
+                  JOptionPane.showMessageDialog(null, "O imposto será: R$" + aumento, null, JOptionPane.INFORMATION_MESSAGE);
                    
                   preco_final= preco+aumento-imposto;
                       
@@ -240,7 +240,7 @@ public class Cap4Q24 {
                   JOptionPane.showMessageDialog(null, "O aumento será: R$" + aumento, null, JOptionPane.INFORMATION_MESSAGE);
                    
                   imposto= porcent_imposto*preco;
-                  JOptionPane.showMessageDialog(null, "O aumento será: R$" + aumento, null, JOptionPane.INFORMATION_MESSAGE);
+                  JOptionPane.showMessageDialog(null, "O imposto será: R$" + aumento, null, JOptionPane.INFORMATION_MESSAGE);
                    
                   preco_final= preco+aumento-imposto;
                       
@@ -263,7 +263,7 @@ public class Cap4Q24 {
                    JOptionPane.showMessageDialog(null, "O aumento será: R$" + aumento, null, JOptionPane.INFORMATION_MESSAGE);
                    
                    imposto= porcent_imposto*preco;
-                   JOptionPane.showMessageDialog(null, "O aumento será: R$" + aumento, null, JOptionPane.INFORMATION_MESSAGE);
+                   JOptionPane.showMessageDialog(null, "O imposto será: R$" + aumento, null, JOptionPane.INFORMATION_MESSAGE);
                    
                    preco_final= preco+aumento-imposto;
                       
@@ -287,7 +287,7 @@ public class Cap4Q24 {
                   JOptionPane.showMessageDialog(null, "O aumento será: R$" + aumento, null, JOptionPane.INFORMATION_MESSAGE);
                    
                   imposto= porcent_imposto*preco;
-                  JOptionPane.showMessageDialog(null, "O aumento será: R$" + aumento, null, JOptionPane.INFORMATION_MESSAGE);
+                  JOptionPane.showMessageDialog(null, "O imposto será: R$" + aumento, null, JOptionPane.INFORMATION_MESSAGE);
                    
                   preco_final= preco+aumento-imposto;
                       
@@ -311,7 +311,7 @@ public class Cap4Q24 {
                   JOptionPane.showMessageDialog(null, "O aumento será: R$" + aumento, null, JOptionPane.INFORMATION_MESSAGE);
                    
                   imposto= porcent_imposto*preco;
-                  JOptionPane.showMessageDialog(null, "O aumento será: R$" + aumento, null, JOptionPane.INFORMATION_MESSAGE);
+                  JOptionPane.showMessageDialog(null, "O imposto será: R$" + aumento, null, JOptionPane.INFORMATION_MESSAGE);
                    
                   preco_final= preco+aumento-imposto;
                       
