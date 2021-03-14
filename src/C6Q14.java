@@ -50,9 +50,12 @@ public class C6Q14 {
        //Calcular média de cada aluno
        
         media=(nota1[i]+nota2[i])/dois;
-        JOptionPane.showMessageDialog(null, "Média do(a) aluno (a) "+ alunos[i] + ": " + media, null, JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, "Notas do(a) aluno (a) "+ alunos[i] + ": \n"
+              +"1° Nota: " + nota1[i] + "\n "
+              +"2° Nota: " + nota2[1]  + "\n "
+              +"Média final: "+ media, null, JOptionPane.INFORMATION_MESSAGE);
        }
-    
+       
     //Retornar as 3 notas de cada aluno(nota 1, nota 2 e media)
     //Calcular média da turma
     //Calcular se foi aprovado ou não
