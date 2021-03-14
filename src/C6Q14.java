@@ -52,10 +52,15 @@ public class C6Q14 {
         media=(nota1[i]+nota2[i])/dois;
         JOptionPane.showMessageDialog(null, "Notas do(a) aluno (a) "+ alunos[i] + ": \n"
               +"1° Nota: " + nota1[i] + "\n "
-              +"2° Nota: " + nota2[1]  + "\n "
+              +"2° Nota: " + nota2[i]  + "\n "
               +"Média final: "+ media, null, JOptionPane.INFORMATION_MESSAGE);
-       }
+          if(media >= 6){
+         JOptionPane.showMessageDialog(null, "Status do(a) aluno(a) " + alunos[i]+ ": Aprovado", null, JOptionPane.INFORMATION_MESSAGE);
+          }else{ JOptionPane.showMessageDialog(null, "Status do(a) aluno(a) " + alunos[i]+ ": Reprovado", null, JOptionPane.INFORMATION_MESSAGE);
+          }
+    }
        
+    
     //Retornar as 3 notas de cada aluno(nota 1, nota 2 e media)
     //Calcular média da turma
     //Calcular se foi aprovado ou não
