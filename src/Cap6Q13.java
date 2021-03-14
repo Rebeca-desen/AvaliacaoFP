@@ -38,20 +38,17 @@ public class Cap6Q13 {
      }
       }
      
-     for(int i=0; i < 3; i++){
-     if(alunos[i]==null){
-      continue;
-      }else{
-      for(int iNotas=0; iNotas < 1; iNotas++)
+    
+      for(int iNotas=0; iNotas < 1; iNotas++){
           if(notas[iNotas]==0){
               continue;
           }else{
                  JOptionPane.showMessageDialog(null, "Relatório final dos alunos e suas notas:" 
-                + (i+1) + alunos[i] + "-" + notas[i],null, JOptionPane.INFORMATION_MESSAGE);
+                + notas[iNotas]);
           }
-  }
+      }
   }
   
     }
-  }
+  
 
