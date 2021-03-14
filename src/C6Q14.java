@@ -14,12 +14,13 @@ import javax.swing.JOptionPane;
 public class C6Q14 {
    public static void main(String[] args){
     //Variaveis
-    String alunos[]= new String[6];
-    float nota1[]= new float[6];
-    float nota2[]= new float[6];
+    String alunos[]= new String[2];
+    float nota1[]= new float[2];
+    float nota2[]= new float[2];
     float media;
     float aprovados;
     float reprovados;
+    int dois=2;
     String input_alunosEturma;
     String input_notas;
     String nome_turma;
@@ -41,9 +42,14 @@ public class C6Q14 {
         
         input_notas=JOptionPane.showInputDialog(null, "2° Nota do aluno(a)", null, JOptionPane.QUESTION_MESSAGE);
         nota2[i]= Float.valueOf(input_notas);
-    }
-    //Retornar as 3 notas de cada aluno
+   
     //Calcular média de cada aluno
+        media=(nota1[i]+nota2[i])/dois;
+    }
+    
+    
+    
+    //Retornar as 3 notas de cada aluno(nota 1, nota 2 e media)
     //Calcular média da turma
     //Calcular se foi aprovado ou não
     //Calcular % de quantos foram aprovados e quantos não
