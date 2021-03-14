@@ -38,10 +38,11 @@ public class Cap6Q13 {
      }
       }
   //Return das arrays
-  
+  JOptionPane.showMessageDialog(null, "essa coisa sai do bagui", null, JOptionPane.INFORMATION_MESSAGE);
      
     for(int i=0; i < 3; i++){
-        alunos[i]= String.valueOf(VInformado);
+       JOptionPane.showMessageDialog(null, "essa misera entra aqui", null, JOptionPane.INFORMATION_MESSAGE);
+        alunos[i]= VInformado;
      if(alunos[i]==null){
       continue;
       }else{
