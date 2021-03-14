@@ -15,7 +15,7 @@ import javax.swing.JOptionPane;
 public class Cap6Q13 {
   public static void main(String [] args){
     // Definir Array e limite de array para:
-    String alunos[]=new String[7];
+    String alunos[]=new String[3];
     float notas[]= new float[1];
     String VInformado;
    
@@ -38,7 +38,7 @@ public class Cap6Q13 {
   
   }
     for(int i=0; i < alunos.length; i++){
-    alunos[i]=null;
+    alunos[i]= alunos[0];
    for (int iNotas=0; iNotas < notas.length; iNotas++){
         notas[iNotas]= 0;
                  JOptionPane.showMessageDialog(null, "Relatório final dos alunos e suas notas:" 
