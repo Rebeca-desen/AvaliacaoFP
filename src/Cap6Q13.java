@@ -34,15 +34,15 @@ public class Cap6Q13 {
    for (int iNotas=0; iNotas < notas.length; iNotas++){
         VInformado= JOptionPane.showInputDialog(null, "Adicione a nota dele", null, JOptionPane.QUESTION_MESSAGE);
         notas[iNotas]= Float.valueOf(VInformado);
-               
+         if(i=3){
+      JOptionPane.showMessageDialog(null, "Relatório final dos alunos e suas notas:" 
+    + (i+1) + "." + alunos[i++] + "- " +notas[iNotas++],null, JOptionPane.INFORMATION_MESSAGE);   
+  }
     
    }
   
   
   }
-   
-   JOptionPane.showMessageDialog(null, "Relatório final dos alunos e suas notas:" 
-    + (i+1) + "." + Arrays.toString(alunos) + "- " + Arrays.toString(notas),null, JOptionPane.INFORMATION_MESSAGE);   
                 
   }
 }
