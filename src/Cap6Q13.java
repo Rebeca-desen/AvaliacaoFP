@@ -32,17 +32,15 @@ public class Cap6Q13 {
   for(int i=0; i < alunos.length; i++){
     VInformado= JOptionPane.showInputDialog(null, "Adicione aque o nome do muleque", null, JOptionPane.QUESTION_MESSAGE);
     alunos[i]= VInformado;
+    if(i!=3){
    for (int iNotas=0; iNotas < notas.length; iNotas++){
         VInformado= JOptionPane.showInputDialog(null, "Adicione a nota dele", null, JOptionPane.QUESTION_MESSAGE);
         notas[iNotas]= Float.valueOf(VInformado);
   
-     
-          }
-     if(i!=3){ continue;
-      }else{
-                JOptionPane.showMessageDialog(null, "Relatório final dos alunos e suas notas:" 
-                + (i+1) + alunos[i++] + "-" + notas[i++],null, JOptionPane.INFORMATION_MESSAGE);
+   }
+          }else{ continue; }
+    
     }
       }
   }
-}
+
