@@ -17,7 +17,7 @@ public class Cap6Q13 {
   public static void main(String [] args){
     // Definir Array e limite de array para:
     String alunos[]=new String[3];
-    float notas[]= new float[0];
+    float notas[]= new float[1];
     String VInformado;
    
    
@@ -32,15 +32,12 @@ public class Cap6Q13 {
   for(int i=0; i < alunos.length; i++){
     VInformado= JOptionPane.showInputDialog(null, "Adicione aque o nome do muleque", null, JOptionPane.QUESTION_MESSAGE);
     alunos[i]= VInformado;
-    if(i!=3){
-   for (int iNotas=0; iNotas < notas.length; iNotas++){
+   
         VInformado= JOptionPane.showInputDialog(null, "Adicione a nota dele", null, JOptionPane.QUESTION_MESSAGE);
-        notas[iNotas]= Float.valueOf(VInformado);
+        notas[i]= Float.valueOf(VInformado);
   
-   }
-          }else{ continue; }
-    
-    }
+  
       }
+    }
   }
 
