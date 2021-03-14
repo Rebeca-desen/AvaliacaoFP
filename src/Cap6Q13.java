@@ -37,6 +37,8 @@ public class Cap6Q13 {
   
      }
       }
+  //Return das arrays
+  
      
     for(int i=0; i < 3; i++){
         alunos[i]= String.valueOf(VInformado);
