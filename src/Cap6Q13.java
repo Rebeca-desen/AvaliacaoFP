@@ -17,7 +17,7 @@ public class Cap6Q13 {
     // Definir Array e limite de array para:
     String alunos[]=new String[3];
     float notas[]= new float[1];
-    String VInformado;
+    String VInformado = null;
    
    
 
@@ -38,17 +38,23 @@ public class Cap6Q13 {
      }
       }
      
-    
+    for(int i=0; i < 3; i++){
+        alunos[i]= VInformado;
+     if(alunos[i]==null){
+      continue;
+      }else{
       for(int iNotas=0; iNotas < 1; iNotas++){
+          notas[iNotas]= Float.valueOf(VInformado);
           if(notas[iNotas]==0){
               continue;
           }else{
                  JOptionPane.showMessageDialog(null, "Relatório final dos alunos e suas notas:" 
-                + notas[iNotas]);
+                + (i+1) + alunos[i] + "-" + notas[i]);
           }
-      }
+  }
   }
   
     }
-  
+  }
+}
 
