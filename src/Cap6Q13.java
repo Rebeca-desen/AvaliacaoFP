@@ -28,7 +28,7 @@ public class Cap6Q13 {
     
   
     // Input para arrays
-  for(int i=0; i < alunos.length; i++){
+  for(int i=0; i <= alunos.length; i++){
     VInformado= JOptionPane.showInputDialog(null, "Adicione aque o nome do muleque", null, JOptionPane.QUESTION_MESSAGE);
     alunos[i]= VInformado;
      for (int iNotas=0; iNotas < notas.length; iNotas++){
