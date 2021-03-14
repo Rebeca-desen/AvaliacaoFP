@@ -1,6 +1,7 @@
 
 import javax.swing.JOptionPane;
 
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -32,8 +33,10 @@ public class Cap6Q13 {
    for (int iNotas=0; iNotas < notas.length; iNotas++){
         VInformado= JOptionPane.showInputDialog(null, "Adicione a nota dele", null, JOptionPane.QUESTION_MESSAGE);
         notas[iNotas]= Float.valueOf(VInformado);
+                 JOptionPane.showMessageDialog(null, "Relatório final dos alunos e suas notas:" 
+                + (i+1) + alunos[i] + "-" + notas[i],null, JOptionPane.INFORMATION_MESSAGE);
    }
-    
+               
     // Retornar valores do input
   }
   }
