@@ -18,9 +18,11 @@ public class C6Q14 {
     float nota1[]= new float[2];
     float nota2[]= new float[2];
     float media;
-    float aprovados;
+    double aprovados=0;
     float reprovados;
     int dois=2;
+    double porcent_total=0.06;
+    float total;
     String input_alunosEturma;
     String input_notas;
     String nome_turma;
@@ -48,22 +50,24 @@ public class C6Q14 {
     
     for(int i=0; i < alunos.length; i++){
        //Calcular média de cada aluno
-       
+       //Retornar as 3 notas de cada aluno(nota 1, nota 2 e media)
+       //Calcular se foi aprovado ou não
         media=(nota1[i]+nota2[i])/dois;
         JOptionPane.showMessageDialog(null, "Notas do(a) aluno (a) "+ alunos[i] + ": \n"
               +"1° Nota: " + nota1[i] + "\n "
               +"2° Nota: " + nota2[i]  + "\n "
               +"Média final: "+ media, null, JOptionPane.INFORMATION_MESSAGE);
           if(media >= 6){
-         JOptionPane.showMessageDialog(null, "Status do(a) aluno(a) " + alunos[i]+ ": Aprovado", null, JOptionPane.INFORMATION_MESSAGE);
+              JOptionPane.showMessageDialog(null, "Status do(a) aluno(a) " + alunos[i]+ ": Aprovado", null, JOptionPane.INFORMATION_MESSAGE);
+              aprovados++;
+              total=(float) (aprovados*porcent_total);
           }else{ JOptionPane.showMessageDialog(null, "Status do(a) aluno(a) " + alunos[i]+ ": Reprovado", null, JOptionPane.INFORMATION_MESSAGE);
           }
     }
        
     
-    //Retornar as 3 notas de cada aluno(nota 1, nota 2 e media)
+    
     //Calcular média da turma
-    //Calcular se foi aprovado ou não
     //Calcular % de quantos foram aprovados e quantos não
     //Se uma das notas for menor que 6 recuperação 
     //Se as duas estão menores que 6, reprovado
