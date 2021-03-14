@@ -39,6 +39,8 @@ public class C6Q14 {
         input_notas=JOptionPane.showInputDialog(null, "1° Nota do aluno(a)", null, JOptionPane.QUESTION_MESSAGE);
         nota1[i]= Float.valueOf(input_notas);
         
+        input_notas=JOptionPane.showInputDialog(null, "2° Nota do aluno(a)", null, JOptionPane.QUESTION_MESSAGE);
+        nota2[i]= Float.valueOf(input_notas);
     }
     //Retornar as 3 notas de cada aluno
     //Calcular média de cada aluno
