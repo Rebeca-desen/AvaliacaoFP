@@ -32,6 +32,11 @@ public class C6Q14 {
     //input alunos(6)
     //input nota 1
     //input nota 2
+    for(int i=0; i < alunos.length; i++){
+        input_alunosEturma=JOptionPane.showInputDialog(null, "Adicione aqui o nome do aluno " + (i+1), null, JOptionPane.QUESTION_MESSAGE);
+        alunos[i]= input_alunosEturma;
+        
+    }
     //Retornar as 3 notas de cada aluno
     //Calcular média de cada aluno
     //Calcular média da turma
