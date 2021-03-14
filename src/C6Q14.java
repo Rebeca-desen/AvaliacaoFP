@@ -34,20 +34,24 @@ public class C6Q14 {
     //input nota 1
     //input nota 2
     for(int i=0; i < alunos.length; i++){
-        input_alunosEturma=JOptionPane.showInputDialog(null, "Adicione aqui o nome do aluno(a) " + (i+1), null, JOptionPane.QUESTION_MESSAGE);
+        input_alunosEturma=JOptionPane.showInputDialog(null, "Adicione aqui o nome do(a) aluno (a) " + (i+1), null, JOptionPane.QUESTION_MESSAGE);
         alunos[i]= input_alunosEturma;
         
-        input_notas=JOptionPane.showInputDialog(null, "1° Nota do aluno(a)", null, JOptionPane.QUESTION_MESSAGE);
+        input_notas=JOptionPane.showInputDialog(null, "1° Nota do(a) aluno (a)", null, JOptionPane.QUESTION_MESSAGE);
         nota1[i]= Float.valueOf(input_notas);
         
-        input_notas=JOptionPane.showInputDialog(null, "2° Nota do aluno(a)", null, JOptionPane.QUESTION_MESSAGE);
+        input_notas=JOptionPane.showInputDialog(null, "2° Nota do(a) aluno (a)", null, JOptionPane.QUESTION_MESSAGE);
         nota2[i]= Float.valueOf(input_notas);
    
-    //Calcular média de cada aluno
-        media=(nota1[i]+nota2[i])/dois;
+ 
     }
     
-    
+    for(int i=0; i < alunos.length; i++){
+       //Calcular média de cada aluno
+       
+        media=(nota1[i]+nota2[i])/dois;
+        JOptionPane.showMessageDialog(null, "Média do(a) aluno (a) "+ alunos[i] + ": " + media, null, JOptionPane.INFORMATION_MESSAGE);
+       }
     
     //Retornar as 3 notas de cada aluno(nota 1, nota 2 e media)
     //Calcular média da turma
