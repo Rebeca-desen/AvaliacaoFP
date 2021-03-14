@@ -39,7 +39,7 @@ public class Cap6Q13 {
       }
      
     for(int i=0; i < 3; i++){
-        alunos[i]= VInformado;
+        alunos[i]= String.valueOf(VInformado);
      if(alunos[i]==null){
       continue;
       }else{
