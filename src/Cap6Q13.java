@@ -15,7 +15,7 @@ public class Cap6Q13 {
   public static void main(String [] args){
     // Definir Array e limite de array para:
     String alunos[]=new String[8];
-    float notas[]= new float[8];
+    float notas[]= new float[1];
     String VInformado;
    
 
