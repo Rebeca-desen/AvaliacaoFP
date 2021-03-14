@@ -1,5 +1,4 @@
 
-import java.util.Arrays;
 import javax.swing.JOptionPane;
 
 
@@ -32,12 +31,27 @@ public class Cap6Q13 {
   for(int i=0; i < alunos.length; i++){
     VInformado= JOptionPane.showInputDialog(null, "Adicione aque o nome do muleque", null, JOptionPane.QUESTION_MESSAGE);
     alunos[i]= VInformado;
-   
+     for (int iNotas=0; iNotas < notas.length; iNotas++){
         VInformado= JOptionPane.showInputDialog(null, "Adicione a nota dele", null, JOptionPane.QUESTION_MESSAGE);
         notas[i]= Float.valueOf(VInformado);
   
-  
+     }
       }
+     
+     for(int i=0; i < 3; i++){
+     if(alunos[i]==null){
+      continue;
+      }else{
+      for(int iNotas=0; iNotas < 1; iNotas++)
+          if(notas[iNotas]==0){
+              continue;
+          }else{
+                 JOptionPane.showMessageDialog(null, "Relatório final dos alunos e suas notas:" 
+                + (i+1) + alunos[i] + "-" + notas[i],null, JOptionPane.INFORMATION_MESSAGE);
+          }
+  }
+  }
+  
     }
   }
 
