@@ -14,14 +14,14 @@ import javax.swing.JOptionPane;
 public class C6Q14 {
    public static void main(String[] args){
     //Variaveis
-    String alunos[]= new String[2];
-    float nota1[]= new float[2];
-    float nota2[]= new float[2];
+    String alunos[]= new String[4];
+    float nota1[]= new float[4];
+    float nota2[]= new float[4];
     float media;
-    double aprovados=0;
+    double aprovados;
     float reprovados;
     int dois=2;
-    double porcent_total=0.06;
+    double porcent_total=0.04;
     float total;
     String input_alunosEturma;
     String input_notas;
@@ -59,10 +59,10 @@ public class C6Q14 {
               +"Média final: "+ media, null, JOptionPane.INFORMATION_MESSAGE);
           if(media >= 6){
               JOptionPane.showMessageDialog(null, "Status do(a) aluno(a) " + alunos[i]+ ": Aprovado", null, JOptionPane.INFORMATION_MESSAGE);
-              total= (float) ((i+1)*porcent_total);
+              total= (float) ((i+1)/porcent_total);
               JOptionPane.showMessageDialog(null, "Porcentagem alunos aprovados:" + total, null, JOptionPane.INFORMATION_MESSAGE);
           }else{ JOptionPane.showMessageDialog(null, "Status do(a) aluno(a) " + alunos[i]+ ": Reprovado", null, JOptionPane.INFORMATION_MESSAGE);
-            total= (float) ((i+1)*porcent_total);
+            total= (float) ((i+1)/porcent_total);
             JOptionPane.showMessageDialog(null, "Porcentagem alunos reprovados:" + total, null, JOptionPane.INFORMATION_MESSAGE);
           }
     }
