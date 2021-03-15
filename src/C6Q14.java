@@ -59,12 +59,14 @@ public class C6Q14 {
               +"Média final: "+ media, null, JOptionPane.INFORMATION_MESSAGE);
           if(media >= 6){
               JOptionPane.showMessageDialog(null, "Status do(a) aluno(a) " + alunos[i]+ ": Aprovado", null, JOptionPane.INFORMATION_MESSAGE);
-              i=1;
-              total= (float) ((i++)/porcent_total);
+              i=0;
+              i++;
+              total= (float) ((i)/porcent_total);
               JOptionPane.showMessageDialog(null, "Porcentagem alunos aprovados:" + total, null, JOptionPane.INFORMATION_MESSAGE);
           }else{ JOptionPane.showMessageDialog(null, "Status do(a) aluno(a) " + alunos[i]+ ": Reprovado", null, JOptionPane.INFORMATION_MESSAGE);
-            i=1;
-            total= (float) ((i++)/porcent_total);
+            i=0;
+            i++;
+            total= (float) ((i)/porcent_total);
             JOptionPane.showMessageDialog(null, "Porcentagem alunos reprovados:" + total, null, JOptionPane.INFORMATION_MESSAGE);
           }
     }
