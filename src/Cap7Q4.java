@@ -46,19 +46,18 @@ public class Cap7Q4 {
     
     for(int i=0; i < notas_provas.length;  i++){ 
       for(int iProvas=0; iProvas < notas_provas[i].length; iProvas++){
-        for(int iMedia=0; iMedia < media.length; iMedia++) {
-      media[iMedia]= (notas_provas[i][0] + notas_provas[i][1])/cinco;
+       
+      media[i]= (notas_provas[i][0] + notas_provas[i][1])/cinco;
       
-      JOptionPane.showMessageDialog(null, "Média artmética do estudante " + alunes[i] + "- " + media[iMedia], null, JOptionPane.INFORMATION_MESSAGE);
+      JOptionPane.showMessageDialog(null, "Média artmética do estudante " + alunes[i] + "- " + media[i], null, JOptionPane.INFORMATION_MESSAGE);
         
-      if (media[iMedia] >=6) {
-       JOptionPane.showMessageDialog(null,alunes[i] + " Aprovado(a) com média- " +media[iMedia] + "\n" + "PARABÉNS!" , null, JOptionPane.INFORMATION_MESSAGE);
-      } else if (media[iMedia] < 6 && media[iMedia] >= 4){
-          JOptionPane.showMessageDialog(null,alunes[i] + " Em recuperação com média- " +media[iMedia] + "\n" + "Estude um pouco mais!", null, JOptionPane.INFORMATION_MESSAGE);
+      if (media[i] >=6) {
+       JOptionPane.showMessageDialog(null,alunes[i] + " Aprovado(a) com média- " +media[i] + "\n" + "PARABÉNS!" , null, JOptionPane.INFORMATION_MESSAGE);
+      } else if (media[i] < 6 && media[i] >= 4){
+          JOptionPane.showMessageDialog(null,alunes[i] + " Em recuperação com média- " +media[i] + "\n" + "Estude um pouco mais!", null, JOptionPane.INFORMATION_MESSAGE);
       }else {
-          JOptionPane.showMessageDialog(null,alunes[i] + " Em reprovado com média- " + media[iMedia] + "\n" + "Não foi dessa vez, mas não desista!", null, JOptionPane.INFORMATION_MESSAGE);
+          JOptionPane.showMessageDialog(null,alunes[i] + " Em reprovado com média- " + media[i] + "\n" + "Não foi dessa vez, mas não desista!", null, JOptionPane.INFORMATION_MESSAGE);
       }
-        }
       }
     
     }
