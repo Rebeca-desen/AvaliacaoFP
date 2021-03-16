@@ -20,7 +20,7 @@ public class Cap7Q4 {
     String alunes_input;
     float media;
     float cinco=2;
-    
+    float media_total = 0;
    
     
     for(int i=0; i < notas_provas.length;  i++){ 
@@ -60,6 +60,18 @@ public class Cap7Q4 {
       }
     
     }
+    
+    for(int i=0; i < notas_provas.length;  i++){ 
+      for(int iProvas=0; iProvas < notas_provas[i].length; iProvas++){
+          
+          media_total += notas_provas[i][iProvas];
+          JOptionPane.showMessageDialog(null, " Média total da turma- "  + media_total , null, JOptionPane.INFORMATION_MESSAGE);
+          
+      }
+      
+      }
+    
+    
     }
    
    }
