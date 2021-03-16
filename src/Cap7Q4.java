@@ -19,20 +19,19 @@ public class Cap7Q4 {
     String notas;
     String alunes_input;
     
-    for(int iNotas=0; iNotas < notas_provas.length;  iNotas++){ //deixar só i
-      for(int iProvas=0; iProvas < notas_provas[iNotas].length; iProvas++){
-        for(int iAlunes=0; iAlunes < alunes.length; iAlunes++){ //mudar para i 
+    for(int i=0; i < notas_provas.length;  i++){ //deixar só i
+      for(int iProvas=0; iProvas < notas_provas[i].length; iProvas++){
+       
+      alunes_input= JOptionPane.showInputDialog(null, "Adicione o nome do " + (i+1) + "° " + "aluno(a):", null, JOptionPane.QUESTION_MESSAGE);
+      alunes[i]= alunes_input;
       
-      alunes_input= JOptionPane.showInputDialog(null, "Adicione o nome do " + (iAlunes+1) + "° " + "aluno(a):", null, JOptionPane.QUESTION_MESSAGE);
-      alunes[iAlunes]= alunes_input;
+      notas= JOptionPane.showInputDialog(null, "Adicione a nota da " + (iProvas+1) + "° " + "prova de " + alunes[i], null, JOptionPane.QUESTION_MESSAGE);
+      notas_provas[i][iProvas]= Float.valueOf(notas);
       
-      notas= JOptionPane.showInputDialog(null, "Adicione a nota da " + (iProvas+1) + "° " + "prova de " + alunes[iAlunes], null, JOptionPane.QUESTION_MESSAGE);
-      notas_provas[iNotas][iProvas]= Float.valueOf(notas);
-      
-      JOptionPane.showMessageDialog(null, notas_provas[iNotas][iProvas], null, JOptionPane.INFORMATION_MESSAGE);
+      JOptionPane.showMessageDialog(null, notas_provas[i][iProvas], null, JOptionPane.INFORMATION_MESSAGE);
         
         
-        }
+        
       }
     
     }
