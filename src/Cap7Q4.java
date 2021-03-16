@@ -18,9 +18,10 @@ public class Cap7Q4 {
     String[] alunes= new String[3];
     String notas;
     String alunes_input;
-    float media;
+    float[] media= new float[3];
     float cinco=2;
     float media_total = 0;
+    float quinze= 3;
    
     
     for(int i=0; i < notas_provas.length;  i++){ 
@@ -45,18 +46,19 @@ public class Cap7Q4 {
     
     for(int i=0; i < notas_provas.length;  i++){ 
       for(int iProvas=0; iProvas < notas_provas[i].length; iProvas++){
+        for(int iMedia=0; iMedia < media.length; iMedia++) {
+      media[iMedia]= (notas_provas[i][0] + notas_provas[i][1])/cinco;
       
-      media= (notas_provas[i][0] + notas_provas[i][1])/cinco;
-      
-      JOptionPane.showMessageDialog(null, "Média artmética do estudante " + alunes[i] + "- " + media, null, JOptionPane.INFORMATION_MESSAGE);
+      JOptionPane.showMessageDialog(null, "Média artmética do estudante " + alunes[i] + "- " + media[iMedia], null, JOptionPane.INFORMATION_MESSAGE);
         
-      if (media >=6) {
-       JOptionPane.showMessageDialog(null,alunes[i] + " Aprovado(a) com média- " + media + "\n" + "PARABÉNS!" , null, JOptionPane.INFORMATION_MESSAGE);
-      } else if (media < 6 && media >= 4){
-          JOptionPane.showMessageDialog(null,alunes[i] + " Em recuperação com média- " + media + "\n" + "Estude um pouco mais!", null, JOptionPane.INFORMATION_MESSAGE);
+      if (media[iMedia] >=6) {
+       JOptionPane.showMessageDialog(null,alunes[i] + " Aprovado(a) com média- " +media[iMedia] + "\n" + "PARABÉNS!" , null, JOptionPane.INFORMATION_MESSAGE);
+      } else if (media[iMedia] < 6 && media[iMedia] >= 4){
+          JOptionPane.showMessageDialog(null,alunes[i] + " Em recuperação com média- " +media[iMedia] + "\n" + "Estude um pouco mais!", null, JOptionPane.INFORMATION_MESSAGE);
       }else {
-          JOptionPane.showMessageDialog(null,alunes[i] + " Em reprovado com média- " + media + "\n" + "Não foi dessa vez, mas não desista!", null, JOptionPane.INFORMATION_MESSAGE);
+          JOptionPane.showMessageDialog(null,alunes[i] + " Em reprovado com média- " + media[iMedia] + "\n" + "Não foi dessa vez, mas não desista!", null, JOptionPane.INFORMATION_MESSAGE);
       }
+        }
       }
     
     }
@@ -64,7 +66,7 @@ public class Cap7Q4 {
     for(int i=0; i < notas_provas.length;  i++){ 
       for(int iProvas=0; iProvas < notas_provas[i].length; iProvas++){
           
-          media_total += notas_provas[i][iProvas];
+          media_total += notas_provas[i][iProvas]/quinze;
           JOptionPane.showMessageDialog(null, " Média total da turma- "  + media_total , null, JOptionPane.INFORMATION_MESSAGE);
           
       }
