@@ -18,6 +18,8 @@ public class Cap7Q4 {
     String[] alunes= new String[3];
     String notas;
     String alunes_input;
+    float media;
+    float cinco=5;
     
    
     
@@ -32,15 +34,24 @@ public class Cap7Q4 {
     
     for(int i=0; i < notas_provas.length;  i++){ 
       for(int iProvas=0; iProvas < notas_provas[i].length; iProvas++){
-       
-      
-      
       notas= JOptionPane.showInputDialog(null, "Adicione a nota da " + (iProvas+1) + "° " + "prova de " + alunes[i], null, JOptionPane.QUESTION_MESSAGE);
       notas_provas[i][iProvas]= Float.valueOf(notas);
       
       JOptionPane.showMessageDialog(null, notas_provas[i][iProvas], null, JOptionPane.INFORMATION_MESSAGE);
         
-        
+      }
+    
+    }
+    
+    for(int i=0; i < notas_provas.length;  i++){ 
+      for(int iProvas=0; iProvas < notas_provas[i].length; iProvas++){
+      
+      media= (notas_provas[i][0] + notas_provas[i][1] + notas_provas[i][2] + notas_provas[i][3] + notas_provas[i][4])/cinco;
+      
+      notas= JOptionPane.showInputDialog(null, "Adicione a nota da " + (iProvas+1) + "° " + "prova de " + alunes[i], null, JOptionPane.QUESTION_MESSAGE);
+      notas_provas[i][iProvas]= Float.valueOf(notas);
+      
+      JOptionPane.showMessageDialog(null, notas_provas[i][iProvas], null, JOptionPane.INFORMATION_MESSAGE);
         
       }
     
