@@ -58,15 +58,26 @@ public class Cap7Q4 {
       }else {
           JOptionPane.showMessageDialog(null,alunes[i] + " Em reprovado com média- " + media[i] + "\n" + "Não foi dessa vez, mas não desista!", null, JOptionPane.INFORMATION_MESSAGE);
       }
+      
+      
       }
     
     }
     
+     for(int i=0; i < notas_provas.length;  i++){ 
+      
+
+          media_total += media[i]/quinze;
+          JOptionPane.showMessageDialog(null, " Média total da turma- "  + media_total , null, JOptionPane.INFORMATION_MESSAGE);
+
+
+
   
           
       }
+   }
+}
       
-      }
     
     
     

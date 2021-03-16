@@ -62,7 +62,7 @@ public class C6Q14 {
               i=0;
               i++;
               total= (float) ((i)/porcent_total);
-              JOptionPane.showMessageDialog(null, "Porcentagem alunos aprovados:" + total, null, JOptionPane.INFORMATION_MESSAGE);
+              JOptionPane.showMessageDialog(null, "Porcentagem alunos aprovados:" + total, null, JOptionPane.INFORMATION_MESSAGE); //pegar total diminuir e dividir
           }else{ JOptionPane.showMessageDialog(null, "Status do(a) aluno(a) " + alunos[i]+ ": Reprovado", null, JOptionPane.INFORMATION_MESSAGE);
             i=0;
             i++;
