@@ -19,9 +19,9 @@ public class Cap7Q4 {
     String notas;
     String alunes_input;
     
-    for(int iNotas=0; iNotas < notas_provas.length;  iNotas++){
+    for(int iNotas=0; iNotas < notas_provas.length;  iNotas++){ //deixar só i
       for(int iProvas=0; iProvas < notas_provas[iNotas].length; iProvas++){
-        for(int iAlunes=0; iAlunes < alunes.length; iAlunes++){
+        for(int iAlunes=0; iAlunes < alunes.length; iAlunes++){ //mudar para i 
       
       alunes_input= JOptionPane.showInputDialog(null, "Adicione o nome do " + (iAlunes+1) + "° " + "aluno(a):", null, JOptionPane.QUESTION_MESSAGE);
       alunes[iAlunes]= alunes_input;
