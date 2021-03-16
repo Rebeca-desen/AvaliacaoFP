@@ -50,6 +50,13 @@ public class Cap7Q4 {
       
       JOptionPane.showMessageDialog(null, "Média artmética do estudante " + alunes[i] + "- " + media, null, JOptionPane.INFORMATION_MESSAGE);
         
+      if (media >=6) {
+       JOptionPane.showMessageDialog(null,alunes[i] + " Aprovado(a) com média- " + media + "\n" + "PARABÉNS!" , null, JOptionPane.INFORMATION_MESSAGE);
+      } else if (media < 6 && media >= 4){
+          JOptionPane.showMessageDialog(null,alunes[i] + " Em recuperação com média- " + media + "\n" + "Estude um pouco mais!", null, JOptionPane.INFORMATION_MESSAGE);
+      }else {
+          JOptionPane.showMessageDialog(null,alunes[i] + " Em reprovado com média- " + media + "\n" + "Não foi dessa vez, mas não desista!", null, JOptionPane.INFORMATION_MESSAGE);
+      }
       }
     
     }
