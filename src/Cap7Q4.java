@@ -9,5 +9,9 @@
  * @author André
  */
 public class Cap7Q4 {
+   public static void main(String[] args){
     
+    String alunos_notas[][]= new String[][];
+   
+   }
 }
