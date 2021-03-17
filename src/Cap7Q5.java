@@ -98,6 +98,7 @@ public class Cap7Q5 {
                          for(int i=0; i < meses_semanas.length; i++){
                           for(int iSem=0; iSem < meses_semanas[i].length; iSem++){
                           meses_semanas[i][iSem]=valor;
+                          total_mes[i]+=meses_semanas[i][iSem];
                           ano+=total_mes[i];
                           
                           JOptionPane.showMessageDialog(null, "Total do ano- R$" + ano, null, JOptionPane.INFORMATION_MESSAGE);
