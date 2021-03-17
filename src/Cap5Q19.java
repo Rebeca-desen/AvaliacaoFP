@@ -25,13 +25,12 @@ public class Cap5Q19 {
     float preco_venday;
     float preco_compraz;
     float preco_vendaz;
-    Random random = new Random();
-    int numerox = random.nextInt(2000);
-    int numeroy = random.nextInt(2000);
-    int numeroz = random.nextInt(2000);
+    int numerox = (int) (Math.random() * 2000);
+    int numeroy = (int) (Math.random() * 2000);
+    int numeroz = (int) (Math.random() * 2000);
     int opcao;
     int opcao2;
-    
+    JOptionPane.showMessageDialog(null, numerox + "\n" + numeroy + "\n" + numeroz + "\n", null, JOptionPane.INFORMATION_MESSAGE );
     
     
     
@@ -84,7 +83,6 @@ public class Cap5Q19 {
                  +"2- ação " + valory + "\n"
                  +"3- ação " + valorz + "\n", null, JOptionPane.QUESTION_MESSAGE);
                 opcao2=Integer.valueOf(VInformado);
-                
                 switch(opcao2){
                      case 1:
                          JOptionPane.showMessageDialog(null, "Lucro da ação " + valorx + "- " + numerox, null, JOptionPane.INFORMATION_MESSAGE);
@@ -98,9 +96,21 @@ public class Cap5Q19 {
                         
                  default: JOptionPane.showMessageDialog(null, "Ação finalizada" , null, JOptionPane.INFORMATION_MESSAGE);
                 }
-                
                         break;
                     case 2:
+                        while(numerox > 1000){
+                        JOptionPane.showMessageDialog(null, "Lucro da ação " + valorx + "Maior que 1000 ", null, JOptionPane.INFORMATION_MESSAGE);
+                        } JOptionPane.showMessageDialog(null, "Lucro da ação " + valorx + "caiu ", null, JOptionPane.INFORMATION_MESSAGE);
+                        
+                        while(numeroy > 1000){
+                        JOptionPane.showMessageDialog(null, "Lucro da ação " + valory + "Maior que 1000 ", null, JOptionPane.INFORMATION_MESSAGE);
+                        } JOptionPane.showMessageDialog(null, "Lucro da ação " + valory + "caiu ", null, JOptionPane.INFORMATION_MESSAGE);
+                        
+                        
+                        while(numeroz > 1000){
+                        JOptionPane.showMessageDialog(null, "Lucro da ação " + valorz + "Maior que 1000 ", null, JOptionPane.INFORMATION_MESSAGE);
+                        } JOptionPane.showMessageDialog(null, "Lucro da ação " + valorz + "caiu ", null, JOptionPane.INFORMATION_MESSAGE);
+                        
                         break;
                     case 3:
                         break;
