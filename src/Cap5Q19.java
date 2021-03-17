@@ -106,21 +106,15 @@ public class Cap5Q19 {
                         sair= VInformado;
                         if ("F".equals(sair)){
                             continuar= false;
-                               } 
-                              }  
-                             }
-                        
-                        if(numeroy > 1000){
+                            
+                             if(numeroy > 1000){
                             while(continuar){
                         VInformado=JOptionPane.showInputDialog(null, "Lucro da ação " + valory + " Maior que 1000 \n" + "Escreva F para sair", null, JOptionPane.INFORMATION_MESSAGE);
                         sair= VInformado;
                         if ("F".equals(sair)){
                             continuar= false;
-                                 } 
-                               }  
-                             }
-                        
-                        if (numeroz > 1000){
+                            
+                            if (numeroz > 1000){
                             while(continuar){
                         VInformado=JOptionPane.showInputDialog(null, "Lucro da ação " + valorz + " Maior que 1000 \n" + "Escreva F para sair", null, JOptionPane.INFORMATION_MESSAGE);
                         sair= VInformado;
@@ -129,6 +123,18 @@ public class Cap5Q19 {
                                 } 
                               }  
                              }
+                            
+                                 } 
+                               }  
+                             }
+                             
+                               } 
+                              }  
+                             }
+                        
+                       
+                        
+                        
                         
                         
                         break;
