@@ -30,6 +30,8 @@ public class Cap5Q19 {
     int numeroz = (int) (Math.random() * 2000);
     int opcao;
     int opcao2;
+    String sair;
+    boolean continuar = true;
     JOptionPane.showMessageDialog(null, numerox + "\n" + numeroy + "\n" + numeroz + "\n", null, JOptionPane.INFORMATION_MESSAGE );
     
     
@@ -98,18 +100,36 @@ public class Cap5Q19 {
                 }
                         break;
                     case 2:
-                        while(numerox > 1000){
-                        JOptionPane.showMessageDialog(null, "Lucro da ação " + valorx + "Maior que 1000 ", null, JOptionPane.INFORMATION_MESSAGE);
-                        } JOptionPane.showMessageDialog(null, "Lucro da ação " + valorx + "caiu ", null, JOptionPane.INFORMATION_MESSAGE);
+                        if (numerox > 1000){
+                            while(continuar){
+                        VInformado=JOptionPane.showInputDialog(null, "Lucro da ação " + valorx + " Maior que 1000 \n" + "Escreva F para sair", null, JOptionPane.INFORMATION_MESSAGE);
+                        sair= VInformado;
+                        if ("F".equals(sair)){
+                            continuar= false;
+                               } 
+                              }  
+                             }
                         
-                        while(numeroy > 1000){
-                        JOptionPane.showMessageDialog(null, "Lucro da ação " + valory + "Maior que 1000 ", null, JOptionPane.INFORMATION_MESSAGE);
-                        } JOptionPane.showMessageDialog(null, "Lucro da ação " + valory + "caiu ", null, JOptionPane.INFORMATION_MESSAGE);
+                        if(numeroy > 1000){
+                            while(continuar){
+                        VInformado=JOptionPane.showInputDialog(null, "Lucro da ação " + valory + " Maior que 1000 \n" + "Escreva F para sair", null, JOptionPane.INFORMATION_MESSAGE);
+                        sair= VInformado;
+                        if ("F".equals(sair)){
+                            continuar= false;
+                                 } 
+                               }  
+                             }
                         
+                        if (numeroz > 1000){
+                            while(continuar){
+                        VInformado=JOptionPane.showInputDialog(null, "Lucro da ação " + valorz + " Maior que 1000 \n" + "Escreva F para sair", null, JOptionPane.INFORMATION_MESSAGE);
+                        sair= VInformado;
+                        if ("F".equals(sair)){
+                            continuar= false;
+                                } 
+                              }  
+                             }
                         
-                        while(numeroz > 1000){
-                        JOptionPane.showMessageDialog(null, "Lucro da ação " + valorz + "Maior que 1000 ", null, JOptionPane.INFORMATION_MESSAGE);
-                        } JOptionPane.showMessageDialog(null, "Lucro da ação " + valorz + "caiu ", null, JOptionPane.INFORMATION_MESSAGE);
                         
                         break;
                     case 3:
@@ -120,9 +140,9 @@ public class Cap5Q19 {
                         break;
                   default:JOptionPane.showMessageDialog(null, "Ação finalizada" , null, JOptionPane.INFORMATION_MESSAGE);
                 }
-    
+    }
     }
     //Receber letra para ser comercializada
     //while >1000
     //Gerador de números automáticos
-}
+
