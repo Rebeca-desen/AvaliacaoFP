@@ -1,5 +1,7 @@
 
+import java.util.Random;
 import javax.swing.JOptionPane;
+
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -23,6 +25,15 @@ public class Cap5Q19 {
     float preco_venday;
     float preco_compraz;
     float preco_vendaz;
+    Random random = new Random();
+    int numerox = random.nextInt(2000);
+    int numeroy = random.nextInt(2000);
+    int numeroz = random.nextInt(2000);
+    int opcao;
+    int opcao2;
+    
+    
+    
     
     String VInformado;
     
@@ -57,6 +68,48 @@ public class Cap5Q19 {
     
     
     
+                 VInformado=JOptionPane.showInputDialog(null, "Selecione o que deseja \n" 
+                 +"1- Lucro de cada ação comercializada \n"
+                 +"2- Quantidade de ações com o lucro superior a 1000 \n"
+                 +"3- Quantidade de ações com o lucro inferior a 200\n"
+                 +"4- Lucro total da empresa\n"
+                 +"5- Finalizar\n", null, JOptionPane.QUESTION_MESSAGE);
+                opcao=Integer.valueOf(VInformado);
+                
+                
+                switch(opcao){
+                    case 1:
+                          VInformado=JOptionPane.showInputDialog(null, "Selecione a ação que deseja ver o lucro \n" 
+                 +"1- ação " + valorx + "\n"
+                 +"2- ação " + valory + "\n"
+                 +"3- ação " + valorz + "\n", null, JOptionPane.QUESTION_MESSAGE);
+                opcao2=Integer.valueOf(VInformado);
+                
+                switch(opcao2){
+                     case 1:
+                         JOptionPane.showMessageDialog(null, "Lucro da ação " + valorx + "- " + numerox, null, JOptionPane.INFORMATION_MESSAGE);
+                        break;
+                    case 2:
+                        JOptionPane.showMessageDialog(null, "Lucro da ação " + valory + "- " + numeroy, null, JOptionPane.INFORMATION_MESSAGE);
+                        break;
+                    case 3: 
+                        JOptionPane.showMessageDialog(null, "Lucro da ação " + valorz + "- " + numeroz, null, JOptionPane.INFORMATION_MESSAGE);
+                        break;
+                        
+                 default: JOptionPane.showMessageDialog(null, "Ação finalizada" , null, JOptionPane.INFORMATION_MESSAGE);
+                }
+                
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+                    case 4: 
+                        break;
+                    case 5:
+                        break;
+                  default:JOptionPane.showMessageDialog(null, "Ação finalizada" , null, JOptionPane.INFORMATION_MESSAGE);
+                }
     
     }
     //Receber letra para ser comercializada
