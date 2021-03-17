@@ -45,9 +45,9 @@ public class Cap7Q4 {
     }
     
     for(int i=0; i < notas_provas.length;  i++){ 
-      for(int iProvas=0; iProvas < notas_provas[i].length; iProvas++){
+      
        
-      media[i]= (notas_provas[i][0] + notas_provas[i][1] + notas_provas[i][2] + notas_provas[i][3] + notas_provas[i][4] )/cinco;
+      media[i]= (notas_provas[i][0] + notas_provas[i][1])/cinco; /* + notas_provas[i][2] + notas_provas[i][3] + notas_provas[i][4] )*/
       
       JOptionPane.showMessageDialog(null, "Média artmética do estudante " + alunes[i] + "- " + media[i], null, JOptionPane.INFORMATION_MESSAGE);
        
@@ -55,29 +55,21 @@ public class Cap7Q4 {
       if (media[i] >=6) {
          
        JOptionPane.showMessageDialog(null,alunes[i] + " Aprovado(a) com média- " +media[i] + "\n" + "PARABÉNS!" , null, JOptionPane.INFORMATION_MESSAGE);
-      } else if (media[i] < 6 && media[i] >= 4){
+      }else if (media[i] < 6 && media[i] >= 4){
           JOptionPane.showMessageDialog(null,alunes[i] + " Em recuperação com média- " +media[i] + "\n" + "Estude um pouco mais!", null, JOptionPane.INFORMATION_MESSAGE);
       }else {
           JOptionPane.showMessageDialog(null,alunes[i] + " Em reprovado com média- " + media[i] + "\n" + "Não foi dessa vez, mas não desista!", null, JOptionPane.INFORMATION_MESSAGE);
       }
       
-      
-      }
-    
+      media_total += media[i]/quinze;
+   
     }
     
-     for(int i=0; i < notas_provas.length;  i++){ 
-      
-
-          media_total += media[i]/quinze;
-          JOptionPane.showMessageDialog(null, " Média total da turma- "  + media_total , null, JOptionPane.INFORMATION_MESSAGE);
-
-
-
-  
+      JOptionPane.showMessageDialog(null, " Média total da turma- "  + media_total , null, JOptionPane.INFORMATION_MESSAGE);
+   
           
       }
-   }
+   
 }
       
     
