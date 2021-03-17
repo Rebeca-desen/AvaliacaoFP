@@ -100,41 +100,22 @@ public class Cap5Q19 {
                 }
                         break;
                     case 2:
-                        if (numerox > 1000){
-                            while(continuar){
-                        VInformado=JOptionPane.showInputDialog(null, "Lucro da ação " + valorx + " Maior que 1000 \n" + "Escreva F para sair", null, JOptionPane.INFORMATION_MESSAGE);
-                        sair= VInformado;
-                        if ("F".equals(sair)){
-                            continuar= false;
-                            
-                             if(numeroy > 1000){
-                            while(continuar){
-                        VInformado=JOptionPane.showInputDialog(null, "Lucro da ação " + valory + " Maior que 1000 \n" + "Escreva F para sair", null, JOptionPane.INFORMATION_MESSAGE);
-                        sair= VInformado;
-                        if ("F".equals(sair)){
-                            continuar= false;
-                            
-                            if (numeroz > 1000){
-                            while(continuar){
-                        VInformado=JOptionPane.showInputDialog(null, "Lucro da ação " + valorz + " Maior que 1000 \n" + "Escreva F para sair", null, JOptionPane.INFORMATION_MESSAGE);
-                        sair= VInformado;
-                        if ("F".equals(sair)){
-                            continuar= false;
-                                } 
-                              }  
-                             }
-                            
-                                 } 
-                               }  
-                             }
-                             
-                               } 
-                              }  
-                             }
-                        
-                       
+                        for (int i= 0; i < 2; i++){
+                          while(numerox > 1000){
+                          JOptionPane.showMessageDialog(null, "Lucro da ação " + valorx + "Maior que 1000 ", null, JOptionPane.INFORMATION_MESSAGE);
+                        } JOptionPane.showMessageDialog(null, "Lucro da ação " + valorx + " caiu ", null, JOptionPane.INFORMATION_MESSAGE);
+
+                          while(numeroy > 1000){
+                          JOptionPane.showMessageDialog(null, "Lucro da ação " + valory + "Maior que 1000 ", null, JOptionPane.INFORMATION_MESSAGE);
+                        } JOptionPane.showMessageDialog(null, "Lucro da ação " + valory + " caiu ", null, JOptionPane.INFORMATION_MESSAGE);
+
+
+                          while(numeroz > 1000){
+                          JOptionPane.showMessageDialog(null, "Lucro da ação " + valorz + "Maior que 1000 ", null, JOptionPane.INFORMATION_MESSAGE);
+                        } JOptionPane.showMessageDialog(null, "Lucro da ação " + valorz + " caiu ", null, JOptionPane.INFORMATION_MESSAGE);
                         
                         
+                        }
                         
                         
                         break;
