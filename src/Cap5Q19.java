@@ -101,16 +101,16 @@ public class Cap5Q19 {
                         break;
                     case 2:
                         for (int i= 0; i < 2; i++){
-                          while(numerox > 1000){
+                          if(numerox > 1000){
                           JOptionPane.showMessageDialog(null, "Lucro da ação " + valorx + "Maior que 1000 ", null, JOptionPane.INFORMATION_MESSAGE);
                         } JOptionPane.showMessageDialog(null, "Lucro da ação " + valorx + " caiu ", null, JOptionPane.INFORMATION_MESSAGE);
 
-                          while(numeroy > 1000){
+                          if(numeroy > 1000){
                           JOptionPane.showMessageDialog(null, "Lucro da ação " + valory + "Maior que 1000 ", null, JOptionPane.INFORMATION_MESSAGE);
                         } JOptionPane.showMessageDialog(null, "Lucro da ação " + valory + " caiu ", null, JOptionPane.INFORMATION_MESSAGE);
 
 
-                          while(numeroz > 1000){
+                          if(numeroz > 1000){
                           JOptionPane.showMessageDialog(null, "Lucro da ação " + valorz + "Maior que 1000 ", null, JOptionPane.INFORMATION_MESSAGE);
                         } JOptionPane.showMessageDialog(null, "Lucro da ação " + valorz + " caiu ", null, JOptionPane.INFORMATION_MESSAGE);
                         
@@ -120,6 +120,24 @@ public class Cap5Q19 {
                         
                         break;
                     case 3:
+                        
+                        for (int i= 0; i < 2; i++){
+                          if(numerox < 200){
+                          JOptionPane.showMessageDialog(null, "Lucro da ação " + valorx + "Menor que 200 ", null, JOptionPane.INFORMATION_MESSAGE);
+                        } JOptionPane.showMessageDialog(null, "Lucro da ação " + valorx + " subiu ", null, JOptionPane.INFORMATION_MESSAGE);
+
+                          if(numeroy < 200){
+                          JOptionPane.showMessageDialog(null, "Lucro da ação " + valory + "Menor que 200 ", null, JOptionPane.INFORMATION_MESSAGE);
+                        } JOptionPane.showMessageDialog(null, "Lucro da ação " + valory + " subiu ", null, JOptionPane.INFORMATION_MESSAGE);
+
+
+                          if(numeroz < 200){
+                          JOptionPane.showMessageDialog(null, "Lucro da ação " + valorz + "Menor que 200 ", null, JOptionPane.INFORMATION_MESSAGE);
+                        } JOptionPane.showMessageDialog(null, "Lucro da ação " + valorz + " subiu ", null, JOptionPane.INFORMATION_MESSAGE);
+                        
+                        
+                        }
+                        
                         break;
                     case 4: 
                         break;
