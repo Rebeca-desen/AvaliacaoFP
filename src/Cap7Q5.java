@@ -20,6 +20,7 @@ public class Cap7Q5 {
         int opcao2;
         String VInformado;
         int[] total_mes= new int[12];
+        int ano=0;
         
         meses[0]="Janeiro";
         meses[1]="Fevereiro";
@@ -94,9 +95,16 @@ public class Cap7Q5 {
                         
                         break;
                     case 3: 
-                        
+                         for(int i=0; i < meses_semanas.length; i++){
+                          for(int iSem=0; iSem < meses_semanas[i].length; iSem++){
+                          meses_semanas[i][iSem]=valor;
+                          ano+=total_mes[i];
+                          
+                          JOptionPane.showMessageDialog(null, "Total do ano- R$" + ano, null, JOptionPane.INFORMATION_MESSAGE);
                         break;
-                        
+                          }
+                         }
+                         
                  default: JOptionPane.showMessageDialog(null, "Ação finalizada" , null, JOptionPane.INFORMATION_MESSAGE);
                 }
     
