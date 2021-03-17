@@ -14,14 +14,14 @@ import javax.swing.JOptionPane;
 public class Cap7Q4 {
    public static void main(String[] args){
     
-    float[][] notas_provas= new float[3][2];
-    String[] alunes= new String[3];
+    float[][] notas_provas= new float[15][5];
+    String[] alunes= new String[15];
     String notas;
     String alunes_input;
-    float[] media= new float[3];
-    float cinco=2;
+    float[] media= new float[15];
+    float cinco=5;
     float media_total = 0;
-    float quinze= 3;
+    float quinze= 15;
    
     
     for(int i=0; i < notas_provas.length;  i++){ 
@@ -47,11 +47,13 @@ public class Cap7Q4 {
     for(int i=0; i < notas_provas.length;  i++){ 
       for(int iProvas=0; iProvas < notas_provas[i].length; iProvas++){
        
-      media[i]= (notas_provas[i][0] + notas_provas[i][1])/cinco;
+      media[i]= (notas_provas[i][0] + notas_provas[i][1] + notas_provas[i][2] + notas_provas[i][3] + notas_provas[i][4] )/cinco;
       
       JOptionPane.showMessageDialog(null, "Média artmética do estudante " + alunes[i] + "- " + media[i], null, JOptionPane.INFORMATION_MESSAGE);
+       
         
       if (media[i] >=6) {
+         
        JOptionPane.showMessageDialog(null,alunes[i] + " Aprovado(a) com média- " +media[i] + "\n" + "PARABÉNS!" , null, JOptionPane.INFORMATION_MESSAGE);
       } else if (media[i] < 6 && media[i] >= 4){
           JOptionPane.showMessageDialog(null,alunes[i] + " Em recuperação com média- " +media[i] + "\n" + "Estude um pouco mais!", null, JOptionPane.INFORMATION_MESSAGE);

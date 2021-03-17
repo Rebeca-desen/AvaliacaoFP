@@ -14,14 +14,14 @@ import javax.swing.JOptionPane;
 public class C6Q14 {
    public static void main(String[] args){
     //Variaveis
-    String alunos[]= new String[4];
-    float nota1[]= new float[4];
-    float nota2[]= new float[4];
+    String alunos[]= new String[6];
+    float nota1[]= new float[6];
+    float nota2[]= new float[6];
     float media;
     float media_total;
-    int qtd_notas=8;
+    int qtd_notas=12;
     int dois=2;
-    double porcent_total=0.04;
+    double porcent_total=0.06;
     float total;
     String input_alunosEturma;
     String input_notas;
@@ -47,6 +47,7 @@ public class C6Q14 {
    
  
     }
+    
     
     for(int i=0; i < alunos.length; i++){
        //Calcular média de cada aluno
