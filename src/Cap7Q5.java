@@ -47,7 +47,13 @@ public class Cap7Q5 {
               
                 switch(opcao){
                      case 1:
-                          VInformado=JOptionPane.showInputDialog(null, "Selecione a semana de qual mês deseja ver \n" 
+                      
+                         
+                         for(int i=0; i < meses_semanas.length; i++){
+                          for(int iSem=0; iSem < meses_semanas[i].length; iSem++){
+                          meses_semanas[i][iSem]=valor;
+                       
+                             VInformado=JOptionPane.showInputDialog(null, "Selecione a semana de qual mês deseja ver \n" 
                  +"1- "+meses[0]+"\n"
                  +"2- "+meses[1]+"\n"
                  +"3- "+meses[2]+"\n"
@@ -61,10 +67,18 @@ public class Cap7Q5 {
                  +"11- "+meses[10]+"\n"                  
                  +"12- "+meses[11]+"\n", null, JOptionPane.QUESTION_MESSAGE);
                 opcao2=Integer.valueOf(VInformado);
+ 
+                i=opcao2;
                 
+                JOptionPane.showMessageDialog(null, "Total de vendas da: \n"
+                        + "Semana 1- R$"+  meses_semanas[i][0] +"\n"
+                        + "Semana 2- R$"+  meses_semanas[i][1] +"\n"
+                        + "Semana 3- R$"+  meses_semanas[i][2] +"\n"
+                        + "Semana 4- R$"+  meses_semanas[i][3], null, JOptionPane.INFORMATION_MESSAGE);
                 
-                
-                
+                          
+                                   }
+                         }
                         break;
                     case 2:
                         
