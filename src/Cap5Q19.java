@@ -30,8 +30,7 @@ public class Cap5Q19 {
     int numeroz = (int) (Math.random() * 2000);
     int opcao;
     int opcao2;
-    String sair;
-    boolean continuar = true;
+    int total;
     JOptionPane.showMessageDialog(null, numerox + "\n" + numeroy + "\n" + numeroz + "\n", null, JOptionPane.INFORMATION_MESSAGE );
     
     
@@ -140,8 +139,11 @@ public class Cap5Q19 {
                         
                         break;
                     case 4: 
+                        total= numerox+numeroy+numeroz;
+                        JOptionPane.showMessageDialog(null, "Total empresa: R$" + total , null, JOptionPane.INFORMATION_MESSAGE);
+                        
                         break;
-                    case 5:
+                    case 5:JOptionPane.showMessageDialog(null, "Agradecemos a preferência" , null, JOptionPane.INFORMATION_MESSAGE);
                         break;
                   default:JOptionPane.showMessageDialog(null, "Ação finalizada" , null, JOptionPane.INFORMATION_MESSAGE);
                 }
