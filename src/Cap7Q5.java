@@ -19,6 +19,7 @@ public class Cap7Q5 {
         int opcao;
         int opcao2;
         String VInformado;
+        int[] total_mes= new int[12];
         
         meses[0]="Janeiro";
         meses[1]="Fevereiro";
@@ -32,6 +33,7 @@ public class Cap7Q5 {
         meses[9]="Outubro";
         meses[10]="Novembro";
         meses[11]="Dezembro";
+        
         
            VInformado=JOptionPane.showInputDialog(null, "Selecione o que deseja \n" 
                  +"1- Total vendido em cada semana do ano \n"
@@ -51,7 +53,6 @@ public class Cap7Q5 {
                          
                          for(int i=0; i < meses_semanas.length; i++){
                           for(int iSem=0; iSem < meses_semanas[i].length; iSem++){
-                          meses_semanas[i][iSem]=valor;
                        
                              VInformado=JOptionPane.showInputDialog(null, "Selecione a semana de qual mês deseja ver \n" 
                  +"1- "+meses[0]+"\n"
@@ -67,10 +68,10 @@ public class Cap7Q5 {
                  +"11- "+meses[10]+"\n"                  
                  +"12- "+meses[11]+"\n", null, JOptionPane.QUESTION_MESSAGE);
                 opcao2=Integer.valueOf(VInformado);
- 
-                i=opcao2;
-                
-                JOptionPane.showMessageDialog(null, "Total de vendas da: \n"
+        
+                i=opcao2-1;
+                meses_semanas[i][iSem]=valor;
+                JOptionPane.showMessageDialog(null, "Total de vendas do mês " + meses[i]+ " \n"
                         + "Semana 1- R$"+  meses_semanas[i][0] +"\n"
                         + "Semana 2- R$"+  meses_semanas[i][1] +"\n"
                         + "Semana 3- R$"+  meses_semanas[i][2] +"\n"
@@ -81,6 +82,15 @@ public class Cap7Q5 {
                          }
                         break;
                     case 2:
+                           for(int i=0; i < meses_semanas.length; i++){
+                          for(int iSem=0; iSem < meses_semanas[i].length; iSem++){
+                          meses_semanas[i][iSem]=valor;
+                          total_mes[i]+=meses_semanas[i][iSem];
+                          
+                          JOptionPane.showMessageDialog(null, "Total de " + meses[i] + "- R$" + total_mes[i], null, JOptionPane.INFORMATION_MESSAGE);
+                          
+                          }
+                         }
                         
                         break;
                     case 3: 
