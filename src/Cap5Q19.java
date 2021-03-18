@@ -14,7 +14,8 @@ import javax.swing.JOptionPane;
  * @author André
  */
 public class Cap5Q19 {
-    public static void main(String[] args){
+    
+    public static void String main(String[] args){
     
     String valorx;
     String valory;
@@ -29,6 +30,7 @@ public class Cap5Q19 {
     int numeroy = (int) (Math.random() * 2000);
     int numeroz = (int) (Math.random() * 2000);
     String opcao;
+    String opcao_input;
     int opcao2;
     int total;
     JOptionPane.showMessageDialog(null, numerox + "\n" + numeroy + "\n" + numeroz + "\n", null, JOptionPane.INFORMATION_MESSAGE );
@@ -68,21 +70,25 @@ public class Cap5Q19 {
     
     
     
-                 VInformado=JOptionPane.showInputDialog(null, "Selecione o que deseja \n" 
+                 
+                 opcao_input=JOptionPane.showInputDialog(null, "Selecione o que deseja \n" 
                  +"A- Lucro de cada ação comercializada \n"
                  +"B- Quantidade de ações com o lucro superior a 1000 \n"
                  +"C- Quantidade de ações com o lucro inferior a 200\n"
                  +"D- Lucro total da empresa\n"
                  +"F- Finalizar\n", null, JOptionPane.QUESTION_MESSAGE);
-                opcao=String.valueOf(VInformado);
+                opcao=opcao_input;
              do{
-                
+
                 switch(opcao){
                     case "A":
-                          VInformado=JOptionPane.showInputDialog(null, "Selecione a ação que deseja ver o lucro \n" 
+                        
+                  for(int i=0; i < 2; i++){
+                  VInformado=JOptionPane.showInputDialog(null, "Selecione a ação que deseja ver o lucro \n" 
                  +"1- ação " + valorx + "\n"
                  +"2- ação " + valory + "\n"
-                 +"3- ação " + valorz + "\n", null, JOptionPane.QUESTION_MESSAGE);
+                 +"3- ação " + valorz + "\n"
+                 +"4- voltar", null, JOptionPane.QUESTION_MESSAGE);
                 opcao2=Integer.valueOf(VInformado);
                 switch(opcao2){
                      case 1:
@@ -94,8 +100,10 @@ public class Cap5Q19 {
                     case 3: 
                         JOptionPane.showMessageDialog(null, "Lucro da ação " + valorz + "- " + numeroz, null, JOptionPane.INFORMATION_MESSAGE);
                         break;
+                       
                         
                  default: JOptionPane.showMessageDialog(null, "Ação finalizada" , null, JOptionPane.INFORMATION_MESSAGE);
+                }
                 }
                         break;
                     case "B":
@@ -103,12 +111,9 @@ public class Cap5Q19 {
                           if(numerox > 1000){
                           JOptionPane.showMessageDialog(null, "Lucro da ação " + valorx + "Maior que 1000 ", null, JOptionPane.INFORMATION_MESSAGE);
                         } JOptionPane.showMessageDialog(null, "Lucro da ação " + valorx + " caiu ", null, JOptionPane.INFORMATION_MESSAGE);
-
                           if(numeroy > 1000){
                           JOptionPane.showMessageDialog(null, "Lucro da ação " + valory + "Maior que 1000 ", null, JOptionPane.INFORMATION_MESSAGE);
                         } JOptionPane.showMessageDialog(null, "Lucro da ação " + valory + " caiu ", null, JOptionPane.INFORMATION_MESSAGE);
-
-
                           if(numeroz > 1000){
                           JOptionPane.showMessageDialog(null, "Lucro da ação " + valorz + "Maior que 1000 ", null, JOptionPane.INFORMATION_MESSAGE);
                         } JOptionPane.showMessageDialog(null, "Lucro da ação " + valorz + " caiu ", null, JOptionPane.INFORMATION_MESSAGE);
@@ -124,12 +129,9 @@ public class Cap5Q19 {
                           if(numerox < 200){
                           JOptionPane.showMessageDialog(null, "Lucro da ação " + valorx + "Menor que 200 ", null, JOptionPane.INFORMATION_MESSAGE);
                         } JOptionPane.showMessageDialog(null, "Lucro da ação " + valorx + " subiu ", null, JOptionPane.INFORMATION_MESSAGE);
-
                           if(numeroy < 200){
                           JOptionPane.showMessageDialog(null, "Lucro da ação " + valory + "Menor que 200 ", null, JOptionPane.INFORMATION_MESSAGE);
                         } JOptionPane.showMessageDialog(null, "Lucro da ação " + valory + " subiu ", null, JOptionPane.INFORMATION_MESSAGE);
-
-
                           if(numeroz < 200){
                           JOptionPane.showMessageDialog(null, "Lucro da ação " + valorz + "Menor que 200 ", null, JOptionPane.INFORMATION_MESSAGE);
                         } JOptionPane.showMessageDialog(null, "Lucro da ação " + valorz + " subiu ", null, JOptionPane.INFORMATION_MESSAGE);
@@ -145,13 +147,13 @@ public class Cap5Q19 {
                         break;
                   default:JOptionPane.showMessageDialog(null, "Ação finalizada" , null, JOptionPane.INFORMATION_MESSAGE);
                 }
-    } while("F".equals(opcao)); 
+    
+    } while(!"F".equals(opcao)); {
+        JOptionPane.showMessageDialog(null, "Agradecemos a preferência" , null, JOptionPane.INFORMATION_MESSAGE);
+    }
         
     
+}
+}
     
-    }
-    }
-    //Receber letra para ser comercializada
-    //while >1000
-    //Gerador de números automáticos
-
+    
