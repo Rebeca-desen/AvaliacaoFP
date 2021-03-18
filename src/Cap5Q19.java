@@ -74,7 +74,7 @@ public class Cap5Q19 {
                  +"C- Quantidade de ações com o lucro inferior a 200\n"
                  +"D- Lucro total da empresa\n"
                  +"F- Finalizar\n", null, JOptionPane.QUESTION_MESSAGE);
-                opcao=VInformado;
+                opcao=String.valueOf(VInformado);
              do{
                 
                 switch(opcao){
@@ -145,7 +145,7 @@ public class Cap5Q19 {
                         break;
                   default:JOptionPane.showMessageDialog(null, "Ação finalizada" , null, JOptionPane.INFORMATION_MESSAGE);
                 }
-    } while("F".equals(opcao)); {
+    } while(opcao=="F"); {
         JOptionPane.showMessageDialog(null, "Agradecemos a preferência" , null, JOptionPane.INFORMATION_MESSAGE);
     }
     
