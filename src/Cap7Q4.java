@@ -47,7 +47,7 @@ public class Cap7Q4 {
     for(int i=0; i < notas_provas.length;  i++){ 
       
        
-      media[i]= (notas_provas[i][0] + notas_provas[i][1])/cinco; /* + notas_provas[i][2] + notas_provas[i][3] + notas_provas[i][4] )*/
+      media[i]= (notas_provas[i][0] + notas_provas[i][1]+notas_provas[i][2] + notas_provas[i][3]+notas_provas[i][4])/cinco; /* + notas_provas[i][2] + notas_provas[i][3] + notas_provas[i][4] )*/
       
       JOptionPane.showMessageDialog(null, "Média artmética do estudante " + alunes[i] + "- " + media[i], null, JOptionPane.INFORMATION_MESSAGE);
        
@@ -62,7 +62,6 @@ public class Cap7Q4 {
       }
       
       media_total += media[i]/quinze;
-   
     }
     
       JOptionPane.showMessageDialog(null, " Média total da turma- "  + media_total , null, JOptionPane.INFORMATION_MESSAGE);

@@ -25,7 +25,10 @@ public class C6Q14 {
     int qtd_notas=12;
     int dois=2;
     double porcent_total=0.06;
-    float total;
+    float total_aprovados = 0;
+    float total_reprovados = 0;
+    float total_recuperacao = 0;
+    
     String input_alunosEturma;
     String input_notas;
     String nome_turma;
@@ -63,20 +66,17 @@ public class C6Q14 {
               +"Média final: "+ media, null, JOptionPane.INFORMATION_MESSAGE);
           if(media >= 6){
               JOptionPane.showMessageDialog(null, "Status do(a) aluno(a) " + alunos[i]+ ": Aprovado", null, JOptionPane.INFORMATION_MESSAGE);
-            
-              total= (float) ((xa++)/porcent_total);
-              JOptionPane.showMessageDialog(null, "Porcentagem alunos aprovados:" + total, null, JOptionPane.INFORMATION_MESSAGE); //pegar total diminuir e dividir
+              total_aprovados= (float) ((xa++)/porcent_total);
+              //pegar total diminuir e dividir
           }else if(media < 6 && media >= 4){
               JOptionPane.showMessageDialog(null, "Status do(a) aluno(a) " + alunos[i]+ ": Recuperação", null, JOptionPane.INFORMATION_MESSAGE);
-            
-              total= (float) ((xc++)/porcent_total);
-              JOptionPane.showMessageDialog(null, "Porcentagem alunos de recuperação: " + total, null, JOptionPane.INFORMATION_MESSAGE);
+              total_recuperacao= (float) ((xc++)/porcent_total);
+             
           }
           
           else{ JOptionPane.showMessageDialog(null, "Status do(a) aluno(a) " + alunos[i]+ ": Reprovado", null, JOptionPane.INFORMATION_MESSAGE);
            
-            total= (float) ((xb++)/porcent_total);
-            JOptionPane.showMessageDialog(null, "Porcentagem alunos reprovados:" + total, null, JOptionPane.INFORMATION_MESSAGE);
+            total_reprovados= (float) ((xb++)/porcent_total);
           }
     }
        
@@ -84,9 +84,9 @@ public class C6Q14 {
     media_total=(nota1[0] + nota2[0]+nota1[1] + nota2[1]+nota1[2] + nota2[2]+nota1[3] + nota2[3])/qtd_notas;
     JOptionPane.showMessageDialog(null, "Média da turma " + media_total, null, JOptionPane.INFORMATION_MESSAGE);
             
-    
-    
-   
+     JOptionPane.showMessageDialog(null, "Porcentagem alunos aprovados:" + total_aprovados, null, JOptionPane.INFORMATION_MESSAGE);
+     JOptionPane.showMessageDialog(null, "Porcentagem alunos de recuperação: " + total_recuperacao, null, JOptionPane.INFORMATION_MESSAGE);
+     JOptionPane.showMessageDialog(null, "Porcentagem alunos reprovados:" + total_reprovados, null, JOptionPane.INFORMATION_MESSAGE);
         }
 }
                
