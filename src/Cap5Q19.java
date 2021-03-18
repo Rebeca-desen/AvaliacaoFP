@@ -1,5 +1,5 @@
 
-import java.util.Random;
+
 import javax.swing.JOptionPane;
 
 
@@ -28,7 +28,7 @@ public class Cap5Q19 {
     int numerox = (int) (Math.random() * 2000);
     int numeroy = (int) (Math.random() * 2000);
     int numeroz = (int) (Math.random() * 2000);
-    int opcao;
+    String opcao;
     int opcao2;
     int total;
     JOptionPane.showMessageDialog(null, numerox + "\n" + numeroy + "\n" + numeroz + "\n", null, JOptionPane.INFORMATION_MESSAGE );
@@ -69,16 +69,16 @@ public class Cap5Q19 {
     
     
                  VInformado=JOptionPane.showInputDialog(null, "Selecione o que deseja \n" 
-                 +"1- Lucro de cada ação comercializada \n"
-                 +"2- Quantidade de ações com o lucro superior a 1000 \n"
-                 +"3- Quantidade de ações com o lucro inferior a 200\n"
-                 +"4- Lucro total da empresa\n"
-                 +"5- Finalizar\n", null, JOptionPane.QUESTION_MESSAGE);
-                opcao=Integer.valueOf(VInformado);
-                
+                 +"A- Lucro de cada ação comercializada \n"
+                 +"B- Quantidade de ações com o lucro superior a 1000 \n"
+                 +"C- Quantidade de ações com o lucro inferior a 200\n"
+                 +"D- Lucro total da empresa\n"
+                 +"F- Finalizar\n", null, JOptionPane.QUESTION_MESSAGE);
+                opcao=VInformado;
+             do{
                 
                 switch(opcao){
-                    case 1:
+                    case "A":
                           VInformado=JOptionPane.showInputDialog(null, "Selecione a ação que deseja ver o lucro \n" 
                  +"1- ação " + valorx + "\n"
                  +"2- ação " + valory + "\n"
@@ -98,7 +98,7 @@ public class Cap5Q19 {
                  default: JOptionPane.showMessageDialog(null, "Ação finalizada" , null, JOptionPane.INFORMATION_MESSAGE);
                 }
                         break;
-                    case 2:
+                    case "B":
                         for (int i= 0; i < 2; i++){
                           if(numerox > 1000){
                           JOptionPane.showMessageDialog(null, "Lucro da ação " + valorx + "Maior que 1000 ", null, JOptionPane.INFORMATION_MESSAGE);
@@ -118,7 +118,7 @@ public class Cap5Q19 {
                         
                         
                         break;
-                    case 3:
+                    case "C":
                         
                         for (int i= 0; i < 2; i++){
                           if(numerox < 200){
@@ -138,15 +138,17 @@ public class Cap5Q19 {
                         }
                         
                         break;
-                    case 4: 
+                    case "D": 
                         total= numerox+numeroy+numeroz;
                         JOptionPane.showMessageDialog(null, "Total empresa: R$" + total , null, JOptionPane.INFORMATION_MESSAGE);
                         
                         break;
-                    case 5:JOptionPane.showMessageDialog(null, "Agradecemos a preferência" , null, JOptionPane.INFORMATION_MESSAGE);
-                        break;
                   default:JOptionPane.showMessageDialog(null, "Ação finalizada" , null, JOptionPane.INFORMATION_MESSAGE);
                 }
+    } while("F".equals(opcao)); {
+        JOptionPane.showMessageDialog(null, "Agradecemos a preferência" , null, JOptionPane.INFORMATION_MESSAGE);
+    }
+    
     }
     }
     //Receber letra para ser comercializada
