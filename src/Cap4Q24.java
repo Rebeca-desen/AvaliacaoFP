@@ -112,7 +112,7 @@ public class Cap4Q24 {
         default: JOptionPane.showMessageDialog(null, "Escolha um valor dos citados" , null, JOptionPane.INFORMATION_MESSAGE);
                    
         }
-               } else { // else do <=25
+               } else { // else do if <=25
                    switch(SecOption) {
              case 1 :
                    porcent_aumento=0.12;
@@ -191,7 +191,7 @@ public class Cap4Q24 {
                 
            
                  }
-           }else{   //else do R (refrigeração)
+           }else{   //else do if R (refrigeração)
                if(preco <= 25 ) {
                
                switch(SecOption) {

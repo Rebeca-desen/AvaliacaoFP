@@ -19,6 +19,8 @@ public class Cap6Q13 {
     float notas[]= new float[8];
     String nomeinf;
     String notainf;
+    float media=0;
+    int oito=8;
 
     // -nome alunos (8)
     // -nota (8)    
@@ -37,18 +39,16 @@ public class Cap6Q13 {
      }
         for(int i=0; i < alunos.length; i++){
                 JOptionPane.showMessageDialog(null,"O Relatório Final dos alunos é:\n"+ "Aluno(a) "+alunos[i]+" - "+notas[i]);
-             
-       
-    }
+        media+=notas[i]/oito;
+        }
+        JOptionPane.showMessageDialog(null,"Média da turma"+ media);
   }
 }
 
   
 
   
-  //Return das arrays
-  
-        
+ 
   
     
   
