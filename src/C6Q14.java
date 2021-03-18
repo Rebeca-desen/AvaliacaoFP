@@ -78,12 +78,7 @@ public class C6Q14 {
             
     
     
-    //Calcular média da turma
-    //Calcular % de quantos foram aprovados e quantos não
-    //Se uma das notas for menor que 6 recuperação 
-    //Se as duas estão menores que 6, reprovado
-    //Quantos reprovados
-    //Quantos passaram
+   
         }
 }
                

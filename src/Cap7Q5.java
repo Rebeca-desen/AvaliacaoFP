@@ -72,15 +72,17 @@ public class Cap7Q5 {
         
                 i=opcao2-1;
                 meses_semanas[i][iSem]=valor;
-                JOptionPane.showMessageDialog(null, "Total de vendas do mês " + meses[i]+ " \n"
+                  JOptionPane.showMessageDialog(null, "Total de vendas do mês " + meses[i]+ " \n"
                         + "Semana 1- R$"+  meses_semanas[i][0] +"\n"
                         + "Semana 2- R$"+  meses_semanas[i][1] +"\n"
                         + "Semana 3- R$"+  meses_semanas[i][2] +"\n"
-                        + "Semana 4- R$"+  meses_semanas[i][3], null, JOptionPane.INFORMATION_MESSAGE);
-                
-                          
-                                   }
+                        + "Semana 4- R$"+  meses_semanas[i][3], null, JOptionPane.INFORMATION_MESSAGE);         
+                         
+                           }
+                         
                          }
+                        
+                
                         break;
                     case 2:
                            for(int i=0; i < meses_semanas.length; i++){
@@ -88,11 +90,12 @@ public class Cap7Q5 {
                           meses_semanas[i][iSem]=valor;
                           total_mes[i]+=meses_semanas[i][iSem];
                           
-                          JOptionPane.showMessageDialog(null, "Total de " + meses[i] + "- R$" + total_mes[i], null, JOptionPane.INFORMATION_MESSAGE);
+                        
                           
                           }
+                          JOptionPane.showMessageDialog(null, "Total de " + meses[i] + "- R$" + total_mes[i], null, JOptionPane.INFORMATION_MESSAGE);
                          }
-                        
+                          
                         break;
                     case 3: 
                          for(int i=0; i < meses_semanas.length; i++){
@@ -101,10 +104,11 @@ public class Cap7Q5 {
                           total_mes[i]+=meses_semanas[i][iSem];
                           ano+=total_mes[i];
                           
-                          JOptionPane.showMessageDialog(null, "Total do ano- R$" + ano, null, JOptionPane.INFORMATION_MESSAGE);
-                        break;
                           }
+                          
                          }
+                         JOptionPane.showMessageDialog(null, "Total do ano- R$" + ano, null, JOptionPane.INFORMATION_MESSAGE);
+                         break;
                          
                  default: JOptionPane.showMessageDialog(null, "Ação finalizada" , null, JOptionPane.INFORMATION_MESSAGE);
                 }
