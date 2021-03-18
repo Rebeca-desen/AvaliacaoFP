@@ -145,9 +145,9 @@ public class Cap5Q19 {
                         break;
                   default:JOptionPane.showMessageDialog(null, "Ação finalizada" , null, JOptionPane.INFORMATION_MESSAGE);
                 }
-    } while(opcao=="F"); {
-        JOptionPane.showMessageDialog(null, "Agradecemos a preferência" , null, JOptionPane.INFORMATION_MESSAGE);
-    }
+    } while("F".equals(opcao)); 
+        
+    
     
     }
     }
