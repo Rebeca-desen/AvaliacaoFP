@@ -41,7 +41,7 @@ public class Cap6Q13 {
                 JOptionPane.showMessageDialog(null,"O Relatório Final dos alunos é:\n"+ "Aluno(a) "+alunos[i]+" - "+notas[i]);
         media+=notas[i]/oito;
         }
-        JOptionPane.showMessageDialog(null,"Média da turma"+ media);
+        JOptionPane.showMessageDialog(null,"Média da turma: "+ media);
   }
 }
 

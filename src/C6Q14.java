@@ -20,6 +20,7 @@ public class C6Q14 {
     float media;
     int xa=1;
     int xb=1;
+    int xc=1;
     float media_total;
     int qtd_notas=12;
     int dois=2;
@@ -65,7 +66,14 @@ public class C6Q14 {
             
               total= (float) ((xa++)/porcent_total);
               JOptionPane.showMessageDialog(null, "Porcentagem alunos aprovados:" + total, null, JOptionPane.INFORMATION_MESSAGE); //pegar total diminuir e dividir
-          }else{ JOptionPane.showMessageDialog(null, "Status do(a) aluno(a) " + alunos[i]+ ": Reprovado", null, JOptionPane.INFORMATION_MESSAGE);
+          }else if(media < 6 && media >= 4){
+              JOptionPane.showMessageDialog(null, "Status do(a) aluno(a) " + alunos[i]+ ": Recuperação", null, JOptionPane.INFORMATION_MESSAGE);
+            
+              total= (float) ((xc++)/porcent_total);
+              JOptionPane.showMessageDialog(null, "Porcentagem alunos de recuperação: " + total, null, JOptionPane.INFORMATION_MESSAGE);
+          }
+          
+          else{ JOptionPane.showMessageDialog(null, "Status do(a) aluno(a) " + alunos[i]+ ": Reprovado", null, JOptionPane.INFORMATION_MESSAGE);
            
             total= (float) ((xb++)/porcent_total);
             JOptionPane.showMessageDialog(null, "Porcentagem alunos reprovados:" + total, null, JOptionPane.INFORMATION_MESSAGE);
@@ -74,7 +82,7 @@ public class C6Q14 {
        
     
     media_total=(nota1[0] + nota2[0]+nota1[1] + nota2[1]+nota1[2] + nota2[2]+nota1[3] + nota2[3])/qtd_notas;
-    JOptionPane.showMessageDialog(null, "Média da turma" + media_total, null, JOptionPane.INFORMATION_MESSAGE);
+    JOptionPane.showMessageDialog(null, "Média da turma " + media_total, null, JOptionPane.INFORMATION_MESSAGE);
             
     
     
